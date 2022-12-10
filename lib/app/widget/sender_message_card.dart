@@ -13,16 +13,12 @@ class SenderMessageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.centerLeft,
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxWidth: MediaQuery.of(context).size.width - 45,
-        ),
+      child: Container(
+        margin: const EdgeInsets.only(right: 57, left: 71),
         child: Card(
-          elevation: 1,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          // color: Color.fromRGBO(37, 45, 49, 1),
+          color: Theme.of(context).colorScheme.tertiary,
           // color: Colors.white,
-          margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
           child: Stack(
             children: [
               Padding(
@@ -34,9 +30,7 @@ class SenderMessageCard extends StatelessWidget {
                 ),
                 child: Text(
                   message,
-                  style: const TextStyle(
-                    fontSize: 16,
-                  ),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
               Positioned(

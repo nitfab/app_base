@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web/widget/fen.dart';
-import '../data.dart';
+import 'package:web/app/widget/fen.dart';
 
 class MyMessageCard extends StatelessWidget {
   final String message;
@@ -13,16 +12,10 @@ class MyMessageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.centerRight,
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxWidth: MediaQuery.of(context).size.width - 45,
-        ),
+      child: Container(
+        margin: const EdgeInsets.only(right: 57, left: 71),
         child: Card(
-          elevation: 1,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          color: Color.fromARGB(255, 60, 115, 50),
-          // color: Color.fromRGBO(217, 253, 211, 1),
-          margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+          color: Theme.of(context).colorScheme.onTertiary,
           child: Stack(
             children: [
               Padding(
@@ -34,9 +27,7 @@ class MyMessageCard extends StatelessWidget {
                 ),
                 child: Text(
                   message,
-                  style: const TextStyle(
-                    fontSize: 16,
-                  ),
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
               Positioned(
@@ -48,7 +39,7 @@ class MyMessageCard extends StatelessWidget {
                       date,
                       style: const TextStyle(
                         fontSize: 13,
-                        color: Colors.white60,
+                        // color: Colors.white60,
                       ),
                     ),
                     const SizedBox(

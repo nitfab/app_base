@@ -16,15 +16,15 @@ class _FENLeftState extends State<FENLeft> {
 
     return Align(
       alignment: Alignment.centerLeft,
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxWidth: MediaQuery.of(context).size.width - 45,
-        ),
-        child: Board(
-          interactableSide: InteractableSide.none,
-          size: screenWidth,
-          orientation: Side.white,
-          fen: widget.title,
+      child: Container(
+        margin: const EdgeInsets.only(right: 57, left: 71),
+        child: Card(
+          child: Board(
+            interactableSide: InteractableSide.none,
+            size: screenWidth,
+            orientation: Side.white,
+            fen: widget.title,
+          ),
         ),
       ),
     );

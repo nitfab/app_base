@@ -13,10 +13,10 @@ packages:
     dependency: transitive
     description:
       name: bloc
-      sha256: "428a6baaa2d1e05d94e115f8b4f2871282aaed385bfcbc8cfae543b46dbc826b"
+      sha256: bd4f8027bfa60d96c8046dec5ce74c463b2c918dce1b0d36593575995344534a
       url: "https://pub.dev"
     source: hosted
-    version: "6.1.3"
+    version: "8.1.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -99,10 +99,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_bloc
-      sha256: c17fe8dc81e90b84798f80fd3580b28aca58d1a07a1baa3a4bcaabfef3c806ae
+      sha256: "890c51c8007f0182360e523518a0c732efb89876cb4669307af7efada5b55557"
       url: "https://pub.dev"
     source: hosted
-    version: "6.1.3"
+    version: "8.1.1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -269,13 +269,13 @@ packages:
     source: hosted
     version: "4.2.4"
   provider:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: provider
-      sha256: af58e866ea76fa7d156ea5e6ffa1c28b52dabff5c87fbdf265f7c6adaa7a741d
+      sha256: e1e7413d70444ea3096815a60fe5da1b11bda8a9dc4769252cc82c53536f8bcc
       url: "https://pub.dev"
     source: hosted
-    version: "4.3.3"
+    version: "6.0.4"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -362,5 +362,5 @@ packages:
     source: hosted
     version: "0.2.0+2"
 sdks:
-  dart: ">=2.19.0-426.0.dev <3.0.0"
+  dart: ">=2.19.0-426.0.dev <4.0.0"
   flutter: ">=3.0.0"
